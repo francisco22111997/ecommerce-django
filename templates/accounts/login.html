@@ -19,7 +19,7 @@
           {% include 'includes/alerts.html' %}
           <div class="card-body">
           <h4 class="card-title mb-4">Login</h4>
-          <form action="{% url 'login' %}" method="POST">
+          <form action="{% url 'login' %}" method="post">
             {% csrf_token %} 
               
               <div class="form-group">

@@ -11,7 +11,7 @@
 	<div class="card">		
         <div class="card-body">
             <h4 class="card-title mb-4">Direccion de Facturacion</h4>
-            <form action="" method="POST">
+            <form action="{% url 'place_order' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
                     
@@ -32,7 +32,7 @@
                     
                     <div class="col form-group">
                         <label for="">Email</label>
-                        <input type="email" name="Email" class="form-control">
+                        <input type="email" name="email" class="form-control">
                     </div>
 
                     <div class="col form-group">
@@ -46,12 +46,12 @@
                     
                     <div class="col form-group">
                         <label for="">Direccion</label>
-                        <input type="text" name="address_line_1" class="form-control">
+                        <input type="text" name="addres_line_1" class="form-control">
                     </div>
 
                     <div class="col form-group">
                         <label for="">Detalles Direccion</label>
-                        <input type="text" name="address_line_1" class="form-control">
+                        <input type="text" name="addres_line_2" class="form-control">
                     </div>
                         
                 </div>

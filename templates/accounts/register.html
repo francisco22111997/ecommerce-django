@@ -13,7 +13,7 @@
             {% include 'includes/alerts.html' %}
 
             <header class="mb-4"><h4 class="card-title">Registro de Usuario</h4></header>
-            <form action="{% url 'register' %}" method="POST">
+            <form action="{% url 'register' %}" method="post">
               {% csrf_token %}
 
                     <div class="form-row">
